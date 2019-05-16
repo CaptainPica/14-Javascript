@@ -1,0 +1,115 @@
+body {
+    background-color: #4a919e;
+}
+
+.pdremove {
+    padding: 0px;
+}
+
+.navbar {
+    background-color: #212e53;
+}
+
+.navbar-brand {
+    color: #bed3c3;
+    text-decoration: none;
+}
+.navbar-brand:visited
+{
+    color: #bed3c3;
+    text-decoration: none;
+}
+.navbar-brand:hover
+{
+    color: #bed3c3;
+    text-decoration: none;
+}
+.navbar-brand:active
+{
+    color: #bed3c3;
+    text-decoration: none;
+}
+
+.jumbotron {
+    background-color: #ce6a6b;
+    color: #212e53;
+}
+
+h4 {font-weight: bold;}
+
+#embolden {
+    font-weight: 500;
+}
+
+.card{
+    border:none;
+    width: 80%;
+    margin-bottom: 3%
+}
+
+.card-header {
+    background-color: #212e53;
+    color: #bed3c3;
+    font-weight: bold;
+}
+
+.card-body {
+    background-color: #bed3c3;
+    color: #212e53;
+}
+
+#submission {
+    background-color: #bed3c3;
+    color: #212e53;
+    padding-left: 0%;
+    border-left: 0%;
+}
+
+.tupper {
+    position: relative;
+    min-height: 100vh;
+}
+
+.ware {
+    padding-bottom: 2rem;
+}
+
+#booty {
+    background-color: #212e53;
+    color: #bed3c3;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    height: 2rem;
+}
+
+#dateInput::placeholder {
+    color: #4a919e;
+}
+
+/* Add the other placeholder text color changes too */
+
+#trouble {
+    width: 80%;
+    overflow: auto;
+}
+
+.table>tbody>tr>td,
+.table>thead>tr>th {
+    border:none;
+    color: #212e53;
+    font-weight: 500;
+}
+
+.table>thead>tr>th {
+    font-size: 1.2rem;
+}
+
+table>tbody>tr:nth-child(2n+1)>td{
+    background: #ce6a6b;
+}
+
+.table>tbody>tr:hover>td {
+    background: #bed3c3;
+}
