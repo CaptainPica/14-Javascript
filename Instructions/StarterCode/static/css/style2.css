@@ -84,15 +84,29 @@ h4 {font-weight: bold;}
     height: 2rem;
 }
 
-#dateInput::placeholder{
+/* Back for when it was a text input */
+/* #dateInput::placeholder{
     color: #4a919e;
-}
+} */
 
 #dateInput, #comboInput, #shapeInput {
     color: #212e53;
+    border: #212e53;
 }
 
-/* Add the other placeholder text color changes too */
+/* Don't know why it removes shapeInputs shadow only if it isn't told focus or active, but is included */
+#dateInput:focus, #comboInput:focus, #shapeInput, #submission:focus {
+    box-shadow: none;
+}
+
+#dateInput:active, #comboInput:active, #shapeInput, #submission:active {
+    box-shadow: none;
+}
+
+option:focus, option:hover, option:active {
+    color:green;
+    background-color: red;
+}
 
 #trouble {
     width: 80%;

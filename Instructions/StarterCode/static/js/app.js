@@ -1,6 +1,13 @@
 // from data.js
 var tableData = data;
 
+// Makes the comments in data intelligable. Replaces HTML designations with proper text.
+tableData.forEach(x => {
+    x.comments = x.comments.replace(/&#44/g,",");
+    x.comments = x.comments.replace(/&#39/g,"'");
+    x.comments = x.comments.replace(/&#33/g,"!");
+});
+
 // YOUR CODE HERE!
 var table = d3.select("tbody");
 
@@ -78,10 +85,5 @@ function insertData() {
         }
     });
 }
-
-function insertData2 () {
-    d3.event.preventDefault();
-    table.html("")
-};
 
 ferm.on("click",insertData);
