@@ -84,8 +84,12 @@ h4 {font-weight: bold;}
     height: 2rem;
 }
 
-#dateInput::placeholder {
+#dateInput::placeholder{
     color: #4a919e;
+}
+
+#dateInput, #comboInput, #shapeInput {
+    color: #212e53;
 }
 
 /* Add the other placeholder text color changes too */

@@ -46,33 +46,42 @@
                     <!-- onsubmit="return false" This makes it not refresh when submit is pushed-->
                     <!-- It also just straight up prevents the form from submitting at all -->
                     <!-- You have to access values another way -->
-                    <form onsubmit="return false">
+                    <form>
 
                         <!-- Date Input -->
-                        <div class="form-group">
-                            <label for="dateInput">Enter A Date Anywhere Between 1/1/2010 and 1/13/2010</label>
+
+                        <!-- Old way of doing things, new way is dropdown. The way below works, but refactoring! -->
+                        <!-- <div class="form-group">
+                            <label for="dateInput">Enter A Date Anywhere Between 1/1/2010 and 1/13/2010</label> -->
                             <!-- The below line takes in the input as a date but still displays the placeholder correctly-->
                             <!-- <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" id="dateInput" placeholder="1/11/2011"> -->
-                            <input type="text" class="form-control" id="dateInput" placeholder="1/1/2010">
+                            <!-- <input type="text" class="form-control" id="dateInput" placeholder="1/1/2010">
+                        </div> -->
+
+                        <div class="form-group">
+                            <label for="dateInput">Select a Date</label>
+                            <select id="dateInput" class="form-control">
+                                <option>All</option>
+                            </select>
                         </div>
 
                         <!-- City Input -->
                         <div class="form-row">
                             <div class="col">
-                                <label for="cityInput">Select A City</label>
+                                <label for="comboInput">Select A City, State, and Country Combo</label>
                                 <!-- The below line takes in the input as a date but still displays the placeholder correctly-->
                                 <!-- <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" id="dateInput" placeholder="1/11/2011"> -->
-                                <select class="form-control" id="cityInput">
-                                    <option value="san jacinto">san jacinto</option>
+                                <select class="form-control" id="comboInput">
+                                    <option>All</option>
                                 </select>
                             </div>
 
                             <div class="col">
-                                <label for="stateInput">Select A City</label>
+                                <label for="shapeInput">Select A Spaceship Shape</label>
                                 <!-- The below line takes in the input as a date but still displays the placeholder correctly-->
                                 <!-- <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" id="dateInput" placeholder="1/11/2011"> -->
-                                <select class="form-control" id="stateInput">
-                                    <option value="ca">ca</option>
+                                <select class="form-control" id="shapeInput">
+                                    <option>All</option>
                                 </select>
                             </div>
                         </div>
