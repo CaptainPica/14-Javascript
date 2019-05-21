@@ -17,6 +17,15 @@ var data = [{
     comments: "Three bright red lights witnessed floating stationary over San Diego New Years Day 2010"
   },
   {
+    datetime: "1/28/1996",
+    city: "dallas",
+    state: "tx",
+    country: "us",
+    shape: "star",
+    durationMinutes: "5 mins.",
+    comments: "Cowboys win a superbowl, that's alien!."
+  },
+  {
     datetime: "1/1/2010",
     city: "el cajon",
     state: "ca",

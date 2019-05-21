@@ -43,7 +43,7 @@ h4 {font-weight: bold;}
 
 .card{
     border:none;
-    width: 80%;
+    width: 100%;
     margin-bottom: 3%
 }
 
@@ -71,7 +71,7 @@ h4 {font-weight: bold;}
 }
 
 .ware {
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 #booty {
@@ -81,7 +81,7 @@ h4 {font-weight: bold;}
     bottom: 0;
     left:0;
     right:0;
-    height: 2rem;
+    height: 1.5rem;
 }
 
 /* Back for when it was a text input */
@@ -109,7 +109,7 @@ option:focus, option:hover, option:active {
 }
 
 #trouble {
-    width: 80%;
+    width: 100%;
     overflow: auto;
 }
 
@@ -130,4 +130,10 @@ table>tbody>tr:nth-child(2n+1)>td{
 
 .table>tbody>tr:hover>td {
     background: #bed3c3;
+}
+
+@media (min-width: 768px) {
+    #trouble, .card {
+        width: 80%;
+    }
 }

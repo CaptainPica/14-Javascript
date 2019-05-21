@@ -37,15 +37,17 @@
             </div>
         
             <!-- Makes the form -->
-            <div class="card mx-auto">
+            <div class="card mx-auto text-center">
                 <div class="card-header">
                     Filter Your Search Here
                 </div>
-        
+
+                <!-- This contains the actual form. -->
                 <div class="card-body">
                     <!-- onsubmit="return false" This makes it not refresh when submit is pushed-->
                     <!-- It also just straight up prevents the form from submitting at all -->
                     <!-- You have to access values another way -->
+                    <!-- This is unused in the current build. -->
                     <form>
 
                         <!-- Date Input -->
@@ -58,6 +60,7 @@
                             <!-- <input type="text" class="form-control" id="dateInput" placeholder="1/1/2010">
                         </div> -->
 
+                        <!-- Date input -->
                         <div class="form-group">
                             <label for="dateInput">Select a Date</label>
                             <select id="dateInput" class="form-control">
@@ -68,7 +71,7 @@
                         <!-- City Input -->
                         <div class="form-row">
                             <div class="col">
-                                <label for="comboInput">Select A City, State, and Country Combo</label>
+                                <label for="comboInput">Select A City, State, and Country</label>
                                 <!-- The below line takes in the input as a date but still displays the placeholder correctly-->
                                 <!-- <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" id="dateInput" placeholder="1/11/2011"> -->
                                 <select class="form-control" id="comboInput">
@@ -76,6 +79,7 @@
                                 </select>
                             </div>
 
+                            <!-- Shape Input -->
                             <div class="col">
                                 <label for="shapeInput">Select A Spaceship Shape</label>
                                 <!-- The below line takes in the input as a date but still displays the placeholder correctly-->
@@ -86,7 +90,7 @@
                             </div>
                         </div>
 
-                        <!-- type="submit" -->
+                        <!-- type="submit" means it clicks on submission. Irrelevant since enter no longer submits.-->
                         <button type="submit" class="btn" id="submission">
                             Filter Table
                         </button>
@@ -95,24 +99,29 @@
             </div>
         
             <!-- Makes the table to be filled -->
-            <table class="table table-striped table-hover mx-auto" id="trouble">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>City</th>
-                        <th>State</th>
-                        <th>Country</th>
-                        <th>Shape</th>
-                        <th>Duration</th>
-                        <th>Comments</th>
-                    </tr>
-                </thead>
-        
-                <tbody>
-        
-                </tbody>
-        
-            </table>
+            <div class="container-fluid pdremove">
+                <div class="row mx-auto pdremove" id="trouble">
+                    <div class="col-12 pdremove">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Country</th>
+                                    <th>Shape</th>
+                                    <th>Duration</th>
+                                    <th>Comments</th>
+                                </tr>
+                            </thead>
+                    
+                            <tbody>
+                    
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Makes the footer -->
