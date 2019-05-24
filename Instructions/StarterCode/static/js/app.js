@@ -35,7 +35,8 @@ var dats = d3.select("#dateInput")
 //     // console.log(data.findIndex((thing) => thing[check] === "light"));
 //     // Gets the objects with a unique element, in the element field specified by check.
 //     var bud = data.filter((element,index) => {
-//         return (data.findIndex((thing) => thing[check] === element[check])) === index;
+
+//         return (data.findIndex((query) => query[check] === element[check])) === index;
 //         // Below lines were used for testing of the double filter
 //         // var bool = (data.findIndex((thing) => thing[check] === element[check]))===index;
 //         // console.log([bool,element[check],index]);
@@ -115,7 +116,9 @@ function insertData() {
     data.filter(wanted).forEach((entry) => {
         var raw = table.append("tr");
         Object.values(entry).forEach((indiv) => {
-            raw.append("td").text(indiv);
+            if (indiv != entry.combo) {
+                raw.append("td").text(indiv);
+            }
         });
     });
 }

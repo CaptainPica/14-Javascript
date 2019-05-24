@@ -99,7 +99,7 @@ h4 {font-weight: bold;}
     box-shadow: none;
 }
 
-#dateInput:active, #comboInput:active, #shapeInput, #submission:active {
+#dateInput:active, #comboInput:active, #submission:active {
     box-shadow: none;
 }
 
